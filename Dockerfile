@@ -2,7 +2,7 @@ FROM debian:stretch-slim
 
 
 RUN apt-get update && \
-    apt-get install -y curl
+    apt-get install -y curl git
 
 RUN curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=/bin/ sh || exit 0
 
